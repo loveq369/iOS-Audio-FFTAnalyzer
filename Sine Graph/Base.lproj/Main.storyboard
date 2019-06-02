@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sine_Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_8516" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-mc-QjQ">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-eX-Oad" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.5" width="667" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y7R-eX-Oad" secondAttribute="height" multiplier="25:14" id="EGy-eJ-NIL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjp-MP-a6t" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="7.5" width="667" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sjp-MP-a6t" secondAttribute="height" multiplier="25:13.5" id="oNm-VQ-g55"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sse-Rx-Fam" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="251" width="375" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sse-Rx-Fam" secondAttribute="height" multiplier="25:13" id="zHU-JL-H7C"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="UHU-En-dnv"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-oW-9l8" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="236" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SUA-oW-9l8" secondAttribute="height" multiplier="25:12.5" id="d2y-6O-3Ql"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="5uG-74-AwR"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suP-QR-WYQ" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="251" width="375" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="suP-QR-WYQ" secondAttribute="height" multiplier="25:12" id="ejQ-Jc-IF8"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="r6B-aY-289"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pM5-ri-T3d" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="236" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pM5-ri-T3d" secondAttribute="height" multiplier="25:11.5" id="syd-yQ-bzw"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="WvJ-Io-IG4"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xug-OA-iix" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="41" width="667" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xug-OA-iix" secondAttribute="height" multiplier="25:11" id="oQ7-a4-bww"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="zUD-Rl-2pb"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnX-Ua-2Gs" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="47.5" width="667" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FnX-Ua-2Gs" secondAttribute="height" multiplier="25:10.5" id="Fnq-Bb-CN3"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="EGr-QI-iaS"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94R-Rb-jd7" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="54" width="667" height="267"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="94R-Rb-jd7" secondAttribute="height" multiplier="25:10" id="yHz-WY-kA8"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="cdg-Xe-PYU"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
+                                        <integer key="value" value="440"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="94R-Rb-jd7" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="2Jj-0T-ARk"/>
+                            <constraint firstItem="Sjp-MP-a6t" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="3YC-rk-2dA"/>
+                            <constraint firstItem="FnX-Ua-2Gs" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="3qr-fE-2vc"/>
+                            <constraint firstItem="xug-OA-iix" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="DXK-7x-Q6b"/>
+                            <constraint firstItem="Y7R-eX-Oad" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FfV-eT-5cl"/>
+                            <constraint firstItem="Z1A-mc-QjQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KP3-eq-wUu"/>
+                            <constraint firstItem="Sjp-MP-a6t" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="QgL-u3-yyp"/>
+                            <constraint firstItem="Y7R-eX-Oad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vhv-Gn-xl1"/>
+                            <constraint firstItem="FnX-Ua-2Gs" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="X5s-Vg-sMz"/>
+                            <constraint firstItem="suP-QR-WYQ" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="XgG-3F-PkO"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1A-mc-QjQ" secondAttribute="trailing" id="Znq-Wc-9GW"/>
+                            <constraint firstItem="suP-QR-WYQ" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="ZuA-6f-V4x"/>
+                            <constraint firstItem="Sse-Rx-Fam" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="aOJ-hm-Hmh"/>
+                            <constraint firstItem="Z1A-mc-QjQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="acq-HR-Qtb"/>
+                            <constraint firstItem="xug-OA-iix" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="b5n-br-65K"/>
+                            <constraint firstAttribute="bottom" secondItem="Z1A-mc-QjQ" secondAttribute="bottom" id="bXQ-yQ-DIO"/>
+                            <constraint firstItem="Sse-Rx-Fam" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="cJF-fv-6G5"/>
+                            <constraint firstItem="pM5-ri-T3d" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="ero-g2-m5Y"/>
+                            <constraint firstItem="suP-QR-WYQ" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="fO8-En-TcY"/>
+                            <constraint firstItem="94R-Rb-jd7" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="fP6-Dk-JVh"/>
+                            <constraint firstItem="pM5-ri-T3d" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="l28-rp-srV"/>
+                            <constraint firstItem="SUA-oW-9l8" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="lkR-81-glZ"/>
+                            <constraint firstItem="Y7R-eX-Oad" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="miu-BN-jCV"/>
+                            <constraint firstItem="94R-Rb-jd7" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="nxm-aZ-2N7"/>
+                            <constraint firstItem="Sjp-MP-a6t" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="qt5-Gg-269"/>
+                            <constraint firstItem="Sse-Rx-Fam" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="sdm-PI-1LR"/>
+                            <constraint firstItem="xug-OA-iix" firstAttribute="centerX" secondItem="Y7R-eX-Oad" secondAttribute="centerX" id="ufI-5l-Ass"/>
+                            <constraint firstItem="FnX-Ua-2Gs" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="vK9-TS-Mbl"/>
+                            <constraint firstItem="SUA-oW-9l8" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="wOV-bE-JLc"/>
+                            <constraint firstItem="pM5-ri-T3d" firstAttribute="leading" secondItem="Y7R-eX-Oad" secondAttribute="leading" id="xmc-rC-Oxn"/>
+                            <constraint firstItem="SUA-oW-9l8" firstAttribute="centerY" secondItem="Y7R-eX-Oad" secondAttribute="centerY" id="xy6-4x-tvD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Z1A-mc-QjQ" id="lXr-Fj-0GS"/>
+                        <outletCollection property="visualizers" destination="94R-Rb-jd7" collectionClass="NSMutableArray" id="EaA-pK-atV"/>
+                        <outletCollection property="visualizers" destination="FnX-Ua-2Gs" collectionClass="NSMutableArray" id="Yo1-rp-EiA"/>
+                        <outletCollection property="visualizers" destination="xug-OA-iix" collectionClass="NSMutableArray" id="zB2-xb-N7T"/>
+                        <outletCollection property="visualizers" destination="pM5-ri-T3d" collectionClass="NSMutableArray" id="uzQ-Fs-sAN"/>
+                        <outletCollection property="visualizers" destination="suP-QR-WYQ" collectionClass="NSMutableArray" id="B1J-Z5-cEr"/>
+                        <outletCollection property="visualizers" destination="SUA-oW-9l8" collectionClass="NSMutableArray" id="jCt-Gj-Kjj"/>
+                        <outletCollection property="visualizers" destination="Sse-Rx-Fam" collectionClass="NSMutableArray" id="0nb-xJ-PKU"/>
+                        <outletCollection property="visualizers" destination="Sjp-MP-a6t" collectionClass="NSMutableArray" id="YGT-7Q-Yur"/>
+                        <outletCollection property="visualizers" destination="Y7R-eX-Oad" collectionClass="NSMutableArray" id="UjZ-S1-ulQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.880059970015" y="120.8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_8516" width="2738.666748046875" height="1313.3333740234375"/>
+    </resources>
+</document>
