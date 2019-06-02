@@ -21,6 +21,7 @@ class UIMusicVisualizerView: UIPlotView, FFTAnalyzerListener {
     
     @IBInspectable var minFrequency: Int = 20
     @IBInspectable var maxFrequency: Int = 20000
+    @IBInspectable var delay: Double = 0
     
     var waveColor: UIColor = .white {
         didSet {
@@ -75,20 +76,10 @@ class UIMusicVisualizerView: UIPlotView, FFTAnalyzerListener {
             vals.append(0)
         }
         
-        self.plot?.yVals = vals
-        animateCurve(with: 0.1)
-    }
-    
-    func performFFT(values: [Double]) {
-        var vals = values
-        
-        for _ in 0 ..< (self.normalizeFactor > 0 ? self.normalizeFactor : self.normalizeFactor + 1) {
-            vals.insert(0, at: 0)
-            vals.append(0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak this = self] in
+            this?.plot?.yVals = vals
+            this?.animateCurve(with: 0.1)
         }
-        
-        plot?.yVals = vals
-        animateCurve(with: 0.1)
     }
 
     override public class var layerClass: AnyClass {

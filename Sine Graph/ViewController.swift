@@ -36,7 +36,7 @@ class ViewController: UIViewController, FFTAnalyzerListener {
     }
 
     override func viewDidLoad() {
-        let url = Bundle.main.url(forResource: "Hopex & Calli Boom - Saying Yes", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "NOX & Calli Boom - Focused", withExtension: "mp3")!
         guard let audioFile = try? AVAudioFile(forReading: url) else {
             return
         }
@@ -59,7 +59,6 @@ class ViewController: UIViewController, FFTAnalyzerListener {
                 visualizer.layer.shadowRadius = 8
                 visualizer.layer.shadowOpacity = 0.4
                 visualizer.layer.shadowOffset = CGSize(width: 0, height: 1)
-                visualizer.waveColor = #colorLiteral(red: 0.1473516524, green: 1, blue: 0.01612938382, alpha: 1)
                 visualizer.layer.shadowColor = #colorLiteral(red: 0.9985123277, green: 0.9053804874, blue: 0.6972615123, alpha: 1).cgColor
             }
             
@@ -72,22 +71,31 @@ class ViewController: UIViewController, FFTAnalyzerListener {
                 break
             case 2:
                 visualizer.waveColor = #colorLiteral(red: 0.9974595904, green: 0.768878758, blue: 0.01064642612, alpha: 1)
+                visualizer.delay = 0.004
                 break
             case 3:
                 visualizer.waveColor = #colorLiteral(red: 1, green: 0.03532447293, blue: 0.1751394868, alpha: 1)
+                visualizer.delay = 0.008
                 break
             case 4:
                 visualizer.waveColor = #colorLiteral(red: 1, green: 0, blue: 0.9434228539, alpha: 1)
+                visualizer.delay = 0.012
                 break
             case 5:
                 visualizer.waveColor = #colorLiteral(red: 0.08007759601, green: 0.006968453526, blue: 1, alpha: 1)
+                visualizer.delay = 0.016
                 break
             case 6:
                 visualizer.waveColor = #colorLiteral(red: 0.01183368172, green: 0.4077807069, blue: 1, alpha: 1)
+                visualizer.delay = 0.02
                 break
             case 7:
                 visualizer.waveColor = #colorLiteral(red: 0, green: 0.9987511039, blue: 0.9996721148, alpha: 1)
+                visualizer.delay = 0.024
                 break
+            case 8:
+                visualizer.waveColor = #colorLiteral(red: 0.1473516524, green: 1, blue: 0.01612938382, alpha: 1)
+                visualizer.delay = 0.028
             default:
                 break
             }
@@ -109,7 +117,7 @@ class ViewController: UIViewController, FFTAnalyzerListener {
     }
     
     func didPerformFFT(plot: FFTPlot) {
-        let offset = min(0.2, max(0, MathUtils.map(fromMin: 0.2, fromMax: 1, toMin: 0, toMax: 0.2, value: plot.getNormalizedValues()[2])))
+        let offset = min(0.3, max(0, MathUtils.map(fromMin: 0, fromMax: 1, toMin: 0, toMax: 0.3, value: plot.getNormalizedValues()[2])))
         particleEmitter.timeOffset = offset + particleEmitter.timeOffset
     }
     
@@ -129,16 +137,16 @@ class ViewController: UIViewController, FFTAnalyzerListener {
     func makeEmitterCell(color: UIColor, longitude: CGFloat) -> CAEmitterCell {
         let cell = CAEmitterCell()
         cell.birthRate = 40
-        cell.lifetime = 5
+        cell.lifetime = 10
         cell.color = color.cgColor
-        cell.velocity = 30
+        cell.velocity = 15
         cell.velocityRange = 10
         cell.emissionLongitude = longitude
         cell.emissionRange = CGFloat.pi / 4
-        cell.scaleRange = 0.05
-        cell.scaleSpeed = -0.05
-        cell.scale = 0.1
-        cell.alphaSpeed = -0.3
+        cell.scaleRange = 0.025
+        cell.scaleSpeed = -0.015
+        cell.scale = 0.05
+        cell.alphaSpeed = -0.15
 
         cell.contents = UIImage(named: "Circular Partical")?.cgImage
         return cell

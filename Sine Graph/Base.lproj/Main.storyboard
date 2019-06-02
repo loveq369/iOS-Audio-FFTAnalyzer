@@ -80,7 +80,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pM5-ri-T3d" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="236" width="375" height="195"/>
+                                <rect key="frame" x="250" y="126" width="375" height="195"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pM5-ri-T3d" secondAttribute="height" multiplier="25:11.5" id="syd-yQ-bzw"/>
                                 </constraints>
