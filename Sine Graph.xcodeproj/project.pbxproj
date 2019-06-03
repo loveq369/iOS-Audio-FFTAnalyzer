@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C71DCFFE22093AE8005DA32A /* Gent  Jawns - Mahal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C71DCFFD22093AE8005DA32A /* Gent  Jawns - Mahal.mp3 */; };
 		C71DD00022094204005DA32A /* 01 Aero Chord x GAWTBASS - Secret [FREE DL].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C71DCFFF22094204005DA32A /* 01 Aero Chord x GAWTBASS - Secret [FREE DL].mp3 */; };
+		C7365EA022A5668000D6BE65 /* TWERL  DEVAULT - Lishu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7365E9F22A5668000D6BE65 /* TWERL  DEVAULT - Lishu.mp3 */; };
+		C7365EA222A567C600D6BE65 /* Mercury.wav in Resources */ = {isa = PBXBuildFile; fileRef = C7365EA122A567C600D6BE65 /* Mercury.wav */; };
 		C73CF282220286A300C2954E /* UIMusicVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73CF281220286A300C2954E /* UIMusicVisualizerView.swift */; };
 		C73CF2842202876800C2954E /* Hopex & Calli Boom - Saying Yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C73CF2832202876800C2954E /* Hopex & Calli Boom - Saying Yes.mp3 */; };
 		C73CF29322028B3700C2954E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73CF29222028B3700C2954E /* Accelerate.framework */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		C71DCFFD22093AE8005DA32A /* Gent  Jawns - Mahal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gent  Jawns - Mahal.mp3"; sourceTree = "<group>"; };
 		C71DCFFF22094204005DA32A /* 01 Aero Chord x GAWTBASS - Secret [FREE DL].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Aero Chord x GAWTBASS - Secret [FREE DL].mp3"; sourceTree = "<group>"; };
+		C7365E9F22A5668000D6BE65 /* TWERL  DEVAULT - Lishu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TWERL  DEVAULT - Lishu.mp3"; sourceTree = "<group>"; };
+		C7365EA122A567C600D6BE65 /* Mercury.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mercury.wav; sourceTree = "<group>"; };
 		C73CF281220286A300C2954E /* UIMusicVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMusicVisualizerView.swift; sourceTree = "<group>"; };
 		C73CF2832202876800C2954E /* Hopex & Calli Boom - Saying Yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hopex & Calli Boom - Saying Yes.mp3"; sourceTree = "<group>"; };
 		C73CF29222028B3700C2954E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -107,6 +111,8 @@
 				C75B670B2206000900FDB3B5 /* KRANE x SLUMBERJACK - Hollow.mp3 */,
 				C7E1A183220BEB3200DEED64 /* NOX & Calli Boom - Focused.mp3 */,
 				C73CF2832202876800C2954E /* Hopex & Calli Boom - Saying Yes.mp3 */,
+				C7365E9F22A5668000D6BE65 /* TWERL  DEVAULT - Lishu.mp3 */,
+				C7365EA122A567C600D6BE65 /* Mercury.wav */,
 				C745622921FECA8A00144512 /* LaunchScreen.storyboard */,
 				C745622C21FECA8A00144512 /* Info.plist */,
 				C7AD689021FF88B10054BD61 /* Utils.swift */,
@@ -177,10 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7365EA222A567C600D6BE65 /* Mercury.wav in Resources */,
 				C745622B21FECA8A00144512 /* LaunchScreen.storyboard in Resources */,
 				C745622821FECA8A00144512 /* Assets.xcassets in Resources */,
 				C71DCFFE22093AE8005DA32A /* Gent  Jawns - Mahal.mp3 in Resources */,
 				C73CF2842202876800C2954E /* Hopex & Calli Boom - Saying Yes.mp3 in Resources */,
+				C7365EA022A5668000D6BE65 /* TWERL  DEVAULT - Lishu.mp3 in Resources */,
 				C75B670C2206000900FDB3B5 /* KRANE x SLUMBERJACK - Hollow.mp3 in Resources */,
 				C745622621FECA8900144512 /* Main.storyboard in Resources */,
 				C71DD00022094204005DA32A /* 01 Aero Chord x GAWTBASS - Secret [FREE DL].mp3 in Resources */,

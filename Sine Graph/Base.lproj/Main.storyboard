@@ -26,22 +26,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Y7R-eX-Oad" secondAttribute="height" multiplier="25:14" id="EGy-eJ-NIL"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjp-MP-a6t" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="7.5" width="667" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Sjp-MP-a6t" secondAttribute="height" multiplier="25:13.5" id="oNm-VQ-g55"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sse-Rx-Fam" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="251" width="375" height="165"/>
@@ -49,11 +39,6 @@
                                     <constraint firstAttribute="width" secondItem="Sse-Rx-Fam" secondAttribute="height" multiplier="25:13" id="zHU-JL-H7C"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="UHU-En-dnv"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-oW-9l8" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="236" width="375" height="195"/>
@@ -61,11 +46,6 @@
                                     <constraint firstAttribute="width" secondItem="SUA-oW-9l8" secondAttribute="height" multiplier="25:12.5" id="d2y-6O-3Ql"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="5uG-74-AwR"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suP-QR-WYQ" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="251" width="375" height="165"/>
@@ -73,11 +53,6 @@
                                     <constraint firstAttribute="width" secondItem="suP-QR-WYQ" secondAttribute="height" multiplier="25:12" id="ejQ-Jc-IF8"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="r6B-aY-289"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pM5-ri-T3d" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="250" y="126" width="375" height="195"/>
@@ -85,11 +60,6 @@
                                     <constraint firstAttribute="width" secondItem="pM5-ri-T3d" secondAttribute="height" multiplier="25:11.5" id="syd-yQ-bzw"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="WvJ-Io-IG4"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xug-OA-iix" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="41" width="667" height="293"/>
@@ -97,11 +67,6 @@
                                     <constraint firstAttribute="width" secondItem="xug-OA-iix" secondAttribute="height" multiplier="25:11" id="oQ7-a4-bww"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="zUD-Rl-2pb"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnX-Ua-2Gs" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="47.5" width="667" height="280"/>
@@ -109,11 +74,6 @@
                                     <constraint firstAttribute="width" secondItem="FnX-Ua-2Gs" secondAttribute="height" multiplier="25:10.5" id="Fnq-Bb-CN3"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="EGr-QI-iaS"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94R-Rb-jd7" customClass="UIMusicVisualizerView" customModule="Sine_Graph" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="54" width="667" height="267"/>
@@ -121,11 +81,6 @@
                                     <constraint firstAttribute="width" secondItem="94R-Rb-jd7" secondAttribute="height" multiplier="25:10" id="yHz-WY-kA8"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="cdg-Xe-PYU"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFrequency">
-                                        <integer key="value" value="440"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

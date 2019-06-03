@@ -36,7 +36,7 @@ class ViewController: UIViewController, FFTAnalyzerListener {
     }
 
     override func viewDidLoad() {
-        let url = Bundle.main.url(forResource: "NOX & Calli Boom - Focused", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "01 Aero Chord x GAWTBASS - Secret [FREE DL]", withExtension: "mp3")!
         guard let audioFile = try? AVAudioFile(forReading: url) else {
             return
         }
@@ -54,6 +54,7 @@ class ViewController: UIViewController, FFTAnalyzerListener {
             visualizer.isSmooth = true
             
             visualizer.type = .topBottom
+            visualizer.maxFrequency = 500
             
             if i == visualizers.count - 1 {
                 visualizer.layer.shadowRadius = 8
@@ -119,6 +120,13 @@ class ViewController: UIViewController, FFTAnalyzerListener {
     func didPerformFFT(plot: FFTPlot) {
         let offset = min(0.3, max(0, MathUtils.map(fromMin: 0, fromMax: 1, toMin: 0, toMax: 0.3, value: plot.getNormalizedValues()[2])))
         particleEmitter.timeOffset = offset + particleEmitter.timeOffset
+        
+        let offsetAnimation = CABasicAnimation(keyPath: "timeOffset")
+        offsetAnimation.fromValue = particleEmitter.timeOffset
+        offsetAnimation.toValue = offset + particleEmitter.timeOffset
+        offsetAnimation.duration = 0.1
+        
+        particleEmitter.add(offsetAnimation, forKey: "offsetAnimation")
     }
     
     func setupEmitter() {
